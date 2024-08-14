@@ -1,0 +1,11 @@
+[package]
+name = "glue-delta-poc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.38", features = ["macros", "rt-multi-thread"] }
+tracing = "0.1.40"
+
+aws-config = { version = "1.5", features = ["rustls"] }
+aws-sdk-glue = {version ="1.53", features = ["rustls"]}
